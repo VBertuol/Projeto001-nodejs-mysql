@@ -22,3 +22,11 @@
     display: flex;
     justify-content: space-around;
 }
+
+.campo_ID {
+    width: 50px;
+}
+
+.enviar {
+    margin-top: 6px;
+}
