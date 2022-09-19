@@ -3,20 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/reset.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="Test React-app" content="Web site created using create-react-app to make crud operations with nodejs and mysql"/>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Teste React App</title>
   </head>
+  
   <body>
+  
     <div id="app"></div>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/jsx">
-      const app = document.getElementById('app');
-      ReactDOM.render(<h1>Develop. Preview. Ship. 🚀</h1>, app);
-    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    <script src="%PUBLIC_URL%/app.js"></script>
+
+    <header>
+      <div class="main_container">
+        <ul class="lista_botoes_container">
+          <li class="botao"><button class="create_button">CREATE</button></li>
+          <li class="botao"><button class="read_button">READ</button></li>
+          <li class="botao"><button class="update_button">UPDATE</button></li>
+          <li class="botao"><button class="delete_button">DELETE</button></li>
+        </ul>
+      <div class="campos_container">
+        <ul class="lista_campos">
+          <li class="campo"><label for="radio-email"></label>Email: <input type="text" class="campo_email"></li></label>
+          <li class="campo"><label for="radio-name"></label>Nome: <input type="text" class="campo_nome"></li></label>
+        </ul>
+      </div>
+    </header>
+
+
+
+
   </body>
+
 </html>
