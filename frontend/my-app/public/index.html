@@ -18,22 +18,28 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
-    <script src="%PUBLIC_URL%/app.js"></script>
+    <script src="%PUBLIC_URL%/main.js"></script>
 
     <header>
-      <div class="main_container">
-        <ul class="lista_botoes_container">
-          <li class="botao"><button class="create_button">CREATE</button></li>
-          <li class="botao"><button class="read_button">READ</button></li>
-          <li class="botao"><button class="update_button">UPDATE</button></li>
-          <li class="botao"><button class="delete_button">DELETE</button></li>
-        </ul>
-      <div class="campos_container">
-        <ul class="lista_campos">
-          <li class="campo"><label for="radio-email"></label>Email: <input type="text" class="campo_email"></li></label>
-          <li class="campo"><label for="radio-name"></label>Nome: <input type="text" class="campo_nome"></li></label>
-        </ul>
-      </div>
+      <form>
+        <div class="main_container">
+          <ul class="lista_botoes_container">
+            <li class="botao"><button class="create_button">CREATE</button></li>
+            <li class="botao"><button class="read_button">READ</button></li>
+            <li class="botao"><button class="update_button">UPDATE</button></li>
+            <li class="botao"><button class="delete_button">DELETE</button></li>
+          </ul>
+          
+        <div class="campos_container">
+          <ul class="lista_campos">
+            <li class="campo"><label for="radio-id"></label>ID: <input type="number" class="campo_ID"></li></label>
+            <li class="campo"><label for="radio-email"></label>Email: <input type="text" class="campo_email"></li></label>
+            <li class="campo"><label for="radio-name"></label>Nome: <input type="text" class="campo_nome"></li></label>
+          </ul>
+        </div>
+
+        <input type="submit" class="enviar">
+      </form>
     </header>
 
 
